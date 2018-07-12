@@ -29,4 +29,7 @@
              "timestampDate": null,
              "date": null
              }
+ - Delete the last added record using HTTP Get
+   - URL : http://localhost:8080/Vehicle-Management/vehicle/delete
+   
     
