@@ -12,6 +12,8 @@ public interface VehicleService {
 	
 	boolean  deleteVehicleById(int vehicleId);
 
+	Vehicle findLastAddedVehicle();
+
 	
 
 }

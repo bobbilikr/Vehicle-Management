@@ -29,4 +29,8 @@ public class VehicleServiceImpl implements VehicleService {
 		return false;
 	}
 
+	public Vehicle findLastAddedVehicle() {
+		return null;
+	}
+
 }
