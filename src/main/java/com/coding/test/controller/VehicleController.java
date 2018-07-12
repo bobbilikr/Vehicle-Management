@@ -20,21 +20,21 @@ public class VehicleController {
 	@Autowired
 	private VehicleService vehicleService;
 
-	@PostMapping(consumes="application/json")
-	public ResponseEntity<Void> addVehicle(@RequestBody Vehicle vehicle) {
+	@PostMapping()
+	public String addVehicle(@RequestBody Vehicle vehicle) {
 
 		vehicleService.insertVehicle(vehicle);
-		return new ResponseEntity<Void>(HttpStatus.CREATED);
+		return "";
 	}
 
 	@GetMapping
 	public ResponseEntity<Vehicle> getVehicle(@RequestParam("id") int id) {
 		
-		/*Vehicle vehicle = vehicleService.getVehicleById(id);
+		Vehicle vehicle = vehicleService.getVehicleById(id);
 		if (vehicle == null) {
 			return new ResponseEntity<Vehicle>(HttpStatus.NOT_FOUND);
-		}*/
-		return null;
+		}
+		return  new ResponseEntity<Vehicle>(vehicle,HttpStatus.NOT_FOUND);
 	}
 
 }
