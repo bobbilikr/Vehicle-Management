@@ -16,4 +16,17 @@
              "timestampDate": null,
              "date": null
              }
+ - Update a Vehicle
+   - Use Http Put Method
+   - URL : http://localhost:8080/Vehicle-Management/vehicle
+   - Body:
+          {   "id":3
+              "price": 454000,
+             	"year": 2017,
+             "speed": 120,
+             "model": "Marker",
+             "type": "Car",
+             "timestampDate": null,
+             "date": null
+             }
     
