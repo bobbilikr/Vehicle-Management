@@ -1,4 +1,4 @@
-package com.coding.test.controller;
+package com.coding.test.service;
 
 import com.coding.test.model.Vehicle;
 

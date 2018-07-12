@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.coding.test.model.Vehicle;
+import com.coding.test.service.VehicleService;
 
 @RestController
 @RequestMapping("/vehicle")
