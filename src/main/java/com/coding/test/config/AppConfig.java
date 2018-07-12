@@ -42,7 +42,7 @@ public class AppConfig {
 		LocalContainerEntityManagerFactoryBean obj = new LocalContainerEntityManagerFactoryBean();
 		obj.setDataSource(dataSource);
 		obj.setJpaVendorAdapter(jpaVendorAdapter);
-		obj.setPackagesToScan("com.coding.test.model");
+		obj.setPackagesToScan("com.coding.test.beans");
 		return obj;
 	}
 
