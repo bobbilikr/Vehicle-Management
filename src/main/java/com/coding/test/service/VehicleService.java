@@ -6,13 +6,13 @@ public interface VehicleService {
 
 	boolean insertVehicle(Vehicle vehicle);
 
-	Vehicle getVehicleById(int vehicleId);	
+	Vehicle getVehicleById(Long vehicleId);	
 
 	boolean updateVehicle(Vehicle vehicle);
 	
-	boolean  deleteVehicleById(int vehicleId);
+	boolean  deleteVehicleById(Long vehicleId);
 
-	Vehicle findLastAddedVehicle();
+	Long findLastAddedVehicle();
 
 	
 

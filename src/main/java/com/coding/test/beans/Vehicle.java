@@ -15,7 +15,7 @@ public class Vehicle {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name = "id", updatable = false, nullable = false)
-	private int vehicleId;
+	private Long vehicleId;
 
 	@Column
 	private double price;
@@ -68,7 +68,7 @@ public class Vehicle {
 	/**
 	 * @return the vehicleId
 	 */
-	public int getVehicleId() {
+	public Long getVehicleId() {
 		return vehicleId;
 	}
 
@@ -76,7 +76,7 @@ public class Vehicle {
 	 * @param vehicleId
 	 *            the vehicleId to set
 	 */
-	public void setVehicleId(int vehicleId) {
+	public void setVehicleId(Long vehicleId) {
 		this.vehicleId = vehicleId;
 	}
 

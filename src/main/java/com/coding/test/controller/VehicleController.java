@@ -29,7 +29,7 @@ public class VehicleController {
 	}
 
 	@GetMapping
-	public ResponseEntity<Vehicle> getVehicle(@RequestParam("id") int id) {
+	public ResponseEntity<Vehicle> getVehicle(@RequestParam("id") Long id) {
 
 		Vehicle vehicle = vehicleService.getVehicleById(id);
 		if (vehicle == null) {
@@ -52,8 +52,8 @@ public class VehicleController {
 	@GetMapping("/delete")
 	public ResponseEntity<Vehicle> deleteLastVehicle() {
 
-		Vehicle vehicle = vehicleService.findLastAddedVehicle();
-		vehicleService.deleteVehicleById(vehicle.getVehicleId());
+		Long vehicleId = vehicleService.findLastAddedVehicle();
+		vehicleService.deleteVehicleById(vehicleId);
 		return new ResponseEntity<Vehicle>(HttpStatus.OK);
 	}
 
